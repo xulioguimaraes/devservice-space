@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevService.Space - Landing Page
 
-## Getting Started
+Uma landing page moderna e responsiva para a DevService.Space, desenvolvida com Next.js, Tailwind CSS e React.
 
-First, run the development server:
+## 🚀 Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Design Moderno**: Interface limpa e profissional com gradientes e animações
+- **Totalmente Responsivo**: Otimizado para desktop, tablet e mobile
+- **Animações Suaves**: Implementadas com Framer Motion
+- **SEO Otimizado**: Meta tags e estrutura semântica
+- **Componentes Organizados**: Código modular e reutilizável
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📱 Seções da Landing Page
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Header Fixo**: Navegação com logo e menu responsivo
+2. **Hero Section**: Banner principal com CTA para WhatsApp
+3. **Sobre Mim**: Apresentação pessoal com features
+4. **Serviços**: Cards com os 5 serviços principais
+5. **Formulário de Contato**: Captação de leads
+6. **Footer**: Links sociais e informações de contato
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tecnologias Utilizadas
 
-## Learn More
+- **Next.js 15** - Framework React
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Estilização
+- **Framer Motion** - Animações
+- **Lucide React** - Ícones
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Como Executar
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Instalar dependências:**
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Executar em modo desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+3. **Abrir no navegador:**
+   ```
+   http://localhost:3000
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Personalização
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Alterar Número do WhatsApp
+Edite o número nos seguintes arquivos:
+- `src/components/Hero.tsx` (linha 6)
+- `src/components/Services.tsx` (linha 89)
+- `src/components/ContactForm.tsx` (linha 89)
+- `src/components/Footer.tsx` (linha 15)
+
+### Alterar Links das Redes Sociais
+Edite os links em `src/components/Footer.tsx` (linhas 8-20)
+
+### Alterar Textos
+Todos os textos estão organizados nos componentes correspondentes e podem ser facilmente editados.
+
+## 🎨 Cores e Estilo
+
+- **Azul**: #3b82f6 (blue-500)
+- **Roxo**: #8b5cf6 (purple-500)
+- **Verde**: #10b981 (green-500)
+- **Cinza**: #6b7280 (gray-500)
+
+## 📦 Scripts Disponíveis
+
+- `npm run dev` - Servidor de desenvolvimento
+- `npm run build` - Build de produção
+- `npm run start` - Servidor de produção
+- `npm run lint` - Verificação de código
+
+## 🌐 Deploy
+
+A aplicação está pronta para deploy em plataformas como:
+- Vercel (recomendado)
+- Netlify
+- AWS Amplify
+- Railway
+
+## 📞 Contato
+
+Para dúvidas ou sugestões sobre este projeto, entre em contato através do WhatsApp ou redes sociais.
+
+---
+
+**DevService.Space** - Transformando ideias em soluções digitais 🚀
