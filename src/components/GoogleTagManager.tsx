@@ -4,7 +4,7 @@ import Script from "next/script";
 
 const GTM_ID = "GTM-WTNSLQ73";
 
-export default function GoogleTagManager() {
+export default function GoogleTagManager({ gTM_ID }: { gTM_ID: string }) {
   return (
     <>
       <Script
@@ -16,7 +16,7 @@ export default function GoogleTagManager() {
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','${GTM_ID}');
+            })(window,document,'script','dataLayer','${gTM_ID}');
           `,
         }}
       />
@@ -24,11 +24,11 @@ export default function GoogleTagManager() {
   );
 }
 
-export function GoogleTagManagerNoscript() {
+export function GoogleTagManagerNoscript({ gTM_ID }: { gTM_ID: string }) {
   return (
     <noscript>
       <iframe
-        src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+        src={`https://www.googletagmanager.com/ns.html?id=${gTM_ID}`}
         height="0"
         width="0"
         style={{ display: "none", visibility: "hidden" }}
