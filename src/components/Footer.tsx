@@ -49,6 +49,7 @@ export default function Footer() {
             <motion.a
               href="https://wa.me/5594988110021?text=Olá! Gostaria de saber mais sobre os serviços da DevService.Space"
               target="_blank"
+              id="whatsapp-link"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
